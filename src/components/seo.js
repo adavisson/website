@@ -53,7 +53,9 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
       ].concat(meta)}
-    />
+    >
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet"/>
+    </Helmet>
   )
 }
 

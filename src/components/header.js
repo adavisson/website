@@ -93,7 +93,7 @@ const Header = ({ siteTitle }) => {
               href={`https://openweathermap.org/city/${cityId}`}
               target="_blank"
             >
-              <Typography style={{ alignSelf: 'center' }} variant="h6" nowrap>
+              <Typography style={{ alignSelf: 'center' }} variant="h6" >
                 {`${city} ${parseInt(temp)}\xB0F `}
               </Typography>
               <img

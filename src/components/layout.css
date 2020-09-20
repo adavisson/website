@@ -1,7 +1,6 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -9,13 +8,146 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  background-color: #fbc02d;
+  color: #002f6c;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #002f6c;
+  color: #fbc02d;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2.5rem;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.phantom {
+  display: block;
+  margin-top: 30px;
+  height: 2.5rem;
+  width: 100%;
+}
+
+.resume {
+  display: inline-block;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.home p {
+  font-size: large;
+  font-weight: 500;
+  max-width: 90%;
+  padding: 10px;
+  margin: auto;
+  flex: 0 1 auto;
+}
+
+.home-links {
+  text-decoration: none;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.document {
+  margin: auto;
+}
+
+.resume h1 {
+  display: inline-block;
+  width: 100%;
+}
+
+.resume a {
+  color: #002f6c;
+}
+.resume .link {
+  margin-bottom: 15px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.about p {
+  text-align: left;
+  max-width: 750px;
+  flex: 0 1 auto;
+  margin: auto;
+  padding: 20px;
+}
+
+.about p a {
+  color: #002f6c;
+  font-weight: 700;
+}
+
+.profile-pic {
+  border-radius: .2rem;
+  max-width: 85%;
+  flex-basis: auto;
+  margin: auto;
+  flex-shrink: 1;
+}
+
+@media only screen and (min-width: 500px) {
+  .profile-pic {
+    max-width: 450px;
+    max-height: auto;
+  }
+
+  .home p {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .footer {
+    justify-content: center;
+  }
 }
