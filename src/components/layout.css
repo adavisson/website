@@ -93,6 +93,11 @@ h1 {
 
 .document {
   margin: auto;
+  width: 80%;
+}
+
+.resume-image {
+  width: 100%
 }
 
 .resume h1 {
@@ -141,7 +146,7 @@ h1 {
 
 .download-button {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px 0px;
 }
 
 @media only screen and (min-width: 500px) {
