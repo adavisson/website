@@ -138,7 +138,7 @@ const Header = ({ siteTitle }) => {
               button
               key="Projects"
               onClick={() => {
-                navigate('/projects')
+                navigate('#projects')
                 setOpen(false)
               }}
             >
@@ -149,7 +149,7 @@ const Header = ({ siteTitle }) => {
               button
               key="Resume"
               onClick={() => {
-                navigate('/resume')
+                navigate('#resume')
                 setOpen(false)
               }}
             >

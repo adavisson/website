@@ -19,6 +19,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "react-pdf": "^5.0.0",
     "use-position": "0.0.7"
   },
   "devDependencies": {

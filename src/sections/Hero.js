@@ -4,7 +4,7 @@ import pic from "../images/profile_pic_crop.png"
 
 const Hero = () => {
   return (
-    <div className="about">
+    <div className="about section" id="about">
       <h1>Welcome!</h1>
       <img
         alt="Andrew Davisson"

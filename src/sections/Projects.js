@@ -73,7 +73,7 @@ const Projects = () => {
   ]
 
   return (
-    <>
+    <div className="projects section" id="projects">
       <h1>Projects</h1>
       <div className="card-container">
         {projects.map(proj => {
@@ -88,7 +88,7 @@ const Projects = () => {
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
 
