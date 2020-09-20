@@ -48,7 +48,7 @@ class Resume extends Component {
         </div>
         <div className="document">
           <Document file={resume}>
-            <Page pageNumber={1} width={this.state.w} />
+            <Page pageNumber={1} style={{ width: '60%'}} />
           </Document>
         </div>
       </div>
