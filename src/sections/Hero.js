@@ -23,11 +23,11 @@ const Hero = () => {
         I am currently working on projects that are built with a variety of
         technologies and frameworks, including: ReactJS, NodeJS, GraphQL,
         Apollo, Vue, and React-Native. Check out my{" "}
-        <Link className="home-links" to="/resume">
+        <Link className="home-links" to="#resume">
           Resume
         </Link>{" "}
         and{" "}
-        <Link className="home-links" to="/projects">
+        <Link className="home-links" to="#projects">
           Projects
         </Link>{" "}
         page to learn more about me and what I am working on.
