@@ -1,12 +1,23 @@
-import React from 'react';
-import { Card, CardContent, Button, Typography, CardActions } from '@material-ui/core'
-import { cardStyle } from '../styles/theme'
+import React from "react"
+import {
+  Card,
+  CardContent,
+  Button,
+  Typography,
+  CardActions,
+} from "@material-ui/core"
+import { cardStyle } from "../styles/theme"
 
-const ProjectCard = (props) => {
-
-  const classes = cardStyle();
+const ProjectCard = props => {
+  const classes = cardStyle()
   return (
-    <Card className={classes.root} color="primary">
+    <Card
+      className={classes.root}
+      color="primary"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+      data-aos-delay="500"
+    >
       <CardContent>
         <Typography className={classes.title} color="secondary">
           {props.title}
@@ -16,7 +27,12 @@ const ProjectCard = (props) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button variant="contained" color="secondary" href={props.repository} target="_blank">
+        <Button
+          variant="contained"
+          color="secondary"
+          href={props.repository}
+          target="_blank"
+        >
           Github
         </Button>
         {props.link && (
@@ -25,13 +41,18 @@ const ProjectCard = (props) => {
           </Button>
         )}
         {props.blog && (
-          <Button variant="contained" color="secondary" href={props.blog} target="_blank">
+          <Button
+            variant="contained"
+            color="secondary"
+            href={props.blog}
+            target="_blank"
+          >
             Blog Post
           </Button>
         )}
       </CardActions>
     </Card>
-  );
+  )
 }
- 
-export default ProjectCard;
+
+export default ProjectCard

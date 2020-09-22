@@ -79,6 +79,7 @@ const Projects = () => {
         {projects.map(proj => {
           return (
             <ProjectCard
+              key={proj.title}
               title={proj.title}
               description={proj.description}
               repository={proj.repository}

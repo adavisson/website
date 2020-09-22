@@ -8,12 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import AOS from "aos"
 
 import Header from "./header"
-import Footer from './footer'
+import Footer from "./footer"
 import "./layout.css"
 import { ThemeProvider } from "@material-ui/core"
 import { theme } from "../styles/theme"
+import { useLayoutEffect } from "react"
+
+import 'aos/dist/aos.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,10 +30,14 @@ const Layout = ({ children }) => {
     }
   `)
 
+  useLayoutEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <main>{children}</main>
+      <main>{children}</main>
       <Footer />
     </ThemeProvider>
   )
