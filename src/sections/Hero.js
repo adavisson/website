@@ -12,9 +12,8 @@ const Hero = () => {
         src={pic}
         data-aos="fade-up"
         data-aos-duration="1500"
-        data-aos-delay="500"
       />
-      <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+      <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         I am a Full Stack Engineer with 5 years of experience as a Systems
         Administrator in various industries. I have a passion for learning new
         technologies and staying up to date with the latest trends in Software
@@ -22,7 +21,7 @@ const Hero = () => {
         and I value effective communication. I welcome unique and challenging
         problems, and I enjoy finding ways to automate tasks and processes.
       </p>
-      <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+      <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         I am currently working on projects that are built with a variety of
         technologies and frameworks, including: ReactJS, NodeJS, GraphQL,
         Apollo, Vue, and React-Native. Check out my{" "}
@@ -35,7 +34,7 @@ const Hero = () => {
         </Link>{" "}
         page to learn more about me and what I am working on.
       </p>
-      <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+      <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         A little more about me, I grew up in South Carolina and went to Clemson
         University (Go Tigers!). After graduating with a degree in Computer
         Information Systems, I landed a job in Charleston, SC and lived there
