@@ -16,7 +16,6 @@ const ProjectCard = props => {
       color="primary"
       data-aos="zoom-in"
       data-aos-duration="1500"
-      data-aos-delay="500"
     >
       <CardContent>
         <Typography className={classes.title} color="secondary">
